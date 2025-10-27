@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-// Déclaration de l'énumération contenant toute les position possibles pour chaque case
+// Déclaration de l'énumération contenant toute les positions possibles pour chaque case
 typedef enum tile_state_e {
     PLAYER1,
     PLAYER2,
@@ -21,7 +21,7 @@ void reset_table(tile_state_t table[3][3]){
 
 
 // Fonction qui permet d'afficher la grille dans la console
-void print_table (tile_state_t table[3][3]) {
+void print_table(tile_state_t table[3][3]) {
     for (int i=0; i < 3; i++){
         for (int j=0; j < 3; j++) {
             char symbole = 0;
@@ -39,7 +39,7 @@ void print_table (tile_state_t table[3][3]) {
 
 
 // Fonction qui demande au joueur 1 de jouer et modifier la case citée
-void move_player1 (tile_state_t table[3][3]) {
+void move_player1(tile_state_t table[3][3]) {
 
     int choice_x_player1 = 0;
     int choice_y_player1 = 0;
@@ -67,7 +67,7 @@ void move_player1 (tile_state_t table[3][3]) {
 
 
 // Fonction qui demande au joueur 2 de jouer et modifier la case citée
-void move_player2 (tile_state_t table[3][3]) {
+void move_player2(tile_state_t table[3][3]) {
        
     int choice_x_player2 = 0;
     int choice_y_player2 = 0;
